@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+    color: #e0e0e0; 
+}
+header{
+    height: 6.3rem;
+    background-color: #c9a44c;
+}
+
+.navegador {                                              /*la barrra*/
+    display: flex;
+    justify-content: space-between; /*horizontal espaciado ene l medio */
+    align-items: center; /*vertical*/
+    padding: 10px 10%;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    position: fixed;
+    width:100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.Perfil img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover; /*cubre todo lo que es el bloque donde esta la imagen */
+    border: 2px solid #c9a44c; 
+}
+
+.opciones {
+    list-style: none;
+    display: flex;
+    gap: 40px; /*un espacio entre cada elemento*/
+}
+
+.opciones a {
+    text-decoration: none; /*quita la cosa de los links*/
+    color: #e0e0e0;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.opciones a:hover {
+    color: #c9a44c;
+    font-size: 1rem;
+}
+
+section {
+    padding: 100px 10%;
+    min-height: 80vh;
+}
+
+#Inicio { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Inicio_presentacion {/*1*/
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.Inicio_presentacion h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.Inicio_presentacion h2 {
+    color: #c9a44c;
+    font-weight: 300;
+}
+
+.Inicio_Tecnologias {/*1.img*/
+    flex:60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background: #161616;
+    border-radius: 10px;
+}
+
+.Inicio_Tecnologias img {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.Inicio_Tecnologias img:hover {
+    filter: grayscale(0%);
+    transform: translateY(-30px);
+}
+
+.Inicio_yo {/*1.yo*/
+    flex: 40%;
+    padding:0px 40px;
+
+}
+
+.Inicio_yo h2 {
+    border-left: 4px solid #c9a44c;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#Projectos { /*2*/
+    background-color: #161616;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projectos h3 {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+button {
+    background-color: transparent;
+    color: #c9a44c;
+    border: 1px solid #c9a44c;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c9a44c;
+    color: #000;
+}
+
+#contacto {/*3*/
+    max-width: 800px;
+  margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px  solid #333;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #c9a44c;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    width:100%;
+    background: #0f0f0f;
+    border: 1px solid #333;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    resize: none;
+}
+
+
+
+input:hover, textarea:hover {
+    background: #e6bc5a;
+    color: #000;
+    letter-spacing: 2px;
+
+}
+
+/* Footer */
+footer {
+    padding: 50px 10%;
+    background: #0a0a0a;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+.redes{
+     display: flex;
+     justify-content: center;
+}
+
+.redes a{
+    background-color: #e0e0e0;
+    margin:0 20px;
+    overflow: hidden;
+    border: 2px solid #e6bc5a;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.redes a img{
+    width:100%;
+    height:100%;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/*dise;o responsivo */
+@media (max-width: 700px) {
+
+    .Inicio_presentacion h1{
+        font-size:2.50rem;}
+
+    .Inicio_Tecnologias, .Inicio_yo {
+        flex: 0 0 100%;
+        padding-left: 0;
+    }
+    
+    .Inicio_yo {
+        margin-top: 30px;
+    }
+
+    .navegador{
+         justify-content: center;
+    }
+    .navegador div{
+        margin:0px 20px ;
+    }
+
+    .Perfil img{
+        width: 50px;
+        height: 50px;
+    }
+}
