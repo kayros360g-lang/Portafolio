@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+ /*antes de empezar me enrrede mucho por tanto codigo por eso puse numeros  en comentario*/
 
 * {
     margin: 0;
@@ -52,7 +52,7 @@ header{
     letter-spacing: 1px;
 }
 
-.opciones a:hover {
+.opciones a:hover { /*hover god*/
     color: #c9a44c;
     font-size: 1rem;
 }
@@ -81,7 +81,6 @@ section {
 
 .Inicio_presentacion h2 {
     color: #c9a44c;
-    font-weight: 300;
 }
 
 .Inicio_Tecnologias {/*1.img*/
@@ -110,7 +109,7 @@ section {
     padding:0px 40px;
 
 }
-
+                            /*no me decido si usar id o clases en esto */
 .Inicio_yo h2 {
     border-left: 4px solid #c9a44c;
     padding-left: 15px;
@@ -224,7 +223,7 @@ footer p {
 }
 
 /*dise;o responsivo */
-@media (max-width: 700px) {
+@media (max-width: 700px) { /*todavia no entiendo por que se ve muy justo en mi telefono resposive pero de temu */
 
     .Inicio_presentacion h1{
         font-size:2.50rem;}
